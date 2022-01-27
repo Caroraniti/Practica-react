@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
 
-function App() {
+//JSX
+// ES UNA MEZCLA DE JS Y HTML. ME PERMITE USAR FUNCIONES QUE RETORNAN HTML
+//PERO CON TODAS LAS FUNCIONALIDADES DE JS (VARIABLES, CONDICIONALES, ETC)
+
+const App = () => {
+
+  const nombre = "Caro"
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="contenedor">
+      <h1>Hola {nombre}</h1>
+      <p>Frontend</p>
     </div>
-  );
+  )
 }
+
+
 
 export default App;
